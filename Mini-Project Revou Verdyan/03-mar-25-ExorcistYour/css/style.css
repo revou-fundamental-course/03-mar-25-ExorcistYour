@@ -1,0 +1,246 @@
+/* Ini file css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #3a3a3a; /* Updated color for the navigation bar */
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+}
+
+header .logo h1 {
+    margin: 0;
+    color: #fff;
+}
+/* Navigation Section */
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+nav {
+    display: flex;
+}
+ 
+nav>a {
+    padding: 8px;
+    border: 1px solid;
+    text-decoration: none;
+    color: white;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff; 
+    padding: 5px 10px; /* Adds padding inside the border */
+    border: 1px solid #fff; /* Adds the border around navigation items */
+}
+/* Navigation Section End*/
+main {
+    padding: 20px;
+}
+
+.welcome {
+    text-align: left;
+    padding: 50px 0;
+    background-color: transparent; /* Removed the background color */
+}
+
+.welcome h2 {
+    margin: 0;
+}
+
+.welcome p {
+    margin: 10px 0;
+}
+
+.placeholder {
+    width: 100%;
+    height: 400px;
+    background-color: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #888;
+}
+
+.profile-box {
+    border: 1px solid #000;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff; 
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.achievement-box {
+    border: 1px solid #000; /* Adds a border to the achievement box */
+    padding: 20px;
+    width: 100%;
+    margin: 20px 0; 
+    background-color: #fff; 
+    box-sizing: border-box; 
+}
+
+.profile-content {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.profile-picture {
+    margin-right: 20px;
+    background-image: url(My\ Photo.jpg);
+    background-size: cover;
+}
+
+.circle-icon {
+    width: 130px; 
+    height: 130px; 
+    border: 2px solid #000;
+    overflow: hidden;
+}
+
+.circle-icon img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    flex: 1; 
+    display: grid;
+    grid-template-columns: max-content 10px auto; /* Creates three columns: label, colon, value */
+    align-items: start;
+    gap: 10px; 
+    text-align: left; 
+}
+
+.info-row {
+    display: contents; 
+}
+
+.info-label {
+    font-weight: bold; /* Makes the label bold */
+    text-align: left; /* Aligns the labels to the left */
+}
+
+.info-colon {
+    text-align: center; /* Centers the colons */
+}
+
+.info-value {
+    text-align: left; /* Aligns values to the left */
+}
+
+.message-us {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.message-us .form-container {
+    width: 45%;
+}
+
+.message-us .form-container form div {
+    margin-bottom: 15px;
+}
+
+.message-us .form-container form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.message-us .form-container form input, .message-us .form-container form select, .message-us .form-container form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.message-us .form-container form button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-info {
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    position: auto;
+    bottom: 0;
+}
+
+.main-logo {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/200);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+ 
+ 
+.banner-img {
+    border: 1px solid;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ 
+
+.banner-1 {
+    /* Local Image */
+    background-image: url(My\ Photo.jpg);
+}
+
+.banner-2 {
+    background-image: url(https://picsum.photos/350);
+}
+
+.banner-3 {
+    background-image: url(https://picsum.photos/375);
+}
+
+/* Responsive */
+@media only screen and (max-width: 480px) {
+    .main-header {
+        flex-direction: column;
+    }
+}
